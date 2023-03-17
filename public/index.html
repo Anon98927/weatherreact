@@ -43,6 +43,46 @@
       The build step will place the bundled scripts into the <body> tag.
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    --><div class="container">
+      <div class="weather-app">
+        <form id="search-form" class="mb-3">
+          <div class="row">
+            <div class="col-9">
+              <input
+                type="search"
+                placeholder="Type a city"
+                class="form-control"
+                id="city-input"
+              />
+            </div>
+            <div class="col-3">
+              <input type="submit" value="search" class="btn btn-primary" />
+            </div>
+          </div>
+        </form>
+        <h1 id="city"></h1>
+        <ul>
+          <li><span id="date"></span></li>
+          <li id="description"></li>
+        </ul>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="d-flex weather-temp">
+              <img src="" id="icon" class="float-left" /><strong
+                id="temperature"
+              ></strong
+              ><small class="units"
+                >&deg F</a>
+              </small>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <ul>
+              <li>Humidity: <span id="humidity"></span></li>
+              <li>Wind: <span id="wind"></span>mph</li>
+            </ul>
+          </div>
+          <div class="weather-forecast" id="forecast"></div>
+        </div>
   </body>
 </html>
